@@ -1,0 +1,67 @@
+{
+  "product": [
+    {
+      "id": "5bba",
+      "image": "https://www.poojaratele.com/media/catalog/product/cache/28b568fbf82d79c53c9eab7361be58d0/m/o/moto_g85_5g_cobalt_blue__1_1.jpg",
+      "name": "MOTOROLA G85 5G",
+      "brand": "Motorola",
+      "category": "Phone",
+      "price": "17,998",
+      "description": "Cobalt Blue,128 GB,8GB RAM"
+    },
+    {
+      "id": "1e60",
+      "description": "Aqua Bliss ,64GB\n",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/z/m/m/-original-imah7jspfydr9bsu.jpeg?q=70&crop=false",
+      "name": "POCO C75 5G",
+      "brand": "Poco",
+      "category": "Phone",
+      "price": "7,999"
+    },
+    {
+      "id": "33f8",
+      "image": "https://www.gsmarena.com.bd/images/products/Oppo-K12x-Violet.jpg",
+      "name": "OPPO K12x 5G ",
+      "brand": "OPPO",
+      "category": "Phone",
+      "price": "12,999",
+      "description": "45W SUPERVOOC Charger in-The-Box ,128GB"
+    },
+    {
+      "id": "3659",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2023/8/336793939/NI/HN/IW/72584197/hp-laptop-15s-11th-gen-intel-core-i5-1155g7-15-6-inch-500x500.jpg",
+      "name": "HP Laptop Intel Core i3 12th Gen 1215U",
+      "brand": "HP",
+      "category": "Laptop",
+      "price": "31,490",
+      "description": "8GB/256GB SSD/Windows 11 Home (15.6inch,Natural Silver,1.69Kg,With MS office"
+    },
+    {
+      "id": "f1f6",
+      "image": "https://cdn1.smartprix.com/rx-iTH3wkImb-w1200-h1200/TH3wkImb.jpg",
+      "name": "Infinix GT Book Intel Core I5 12th Gen 12450H",
+      "brand": "Infinix",
+      "category": "Laptop",
+      "price": "51,990",
+      "description": "16GB/512GB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 3050/80W"
+    },
+    {
+      "id": "c677",
+      "image": "https://th.bing.com/th/id/OIP.cs32aFrJr3EFnE9qFBawQgHaHa?rs=1&pid=ImgDetMain",
+      "name": "Lenevo  Cromebook Media Tek Komanio 520",
+      "brand": "Lenevo",
+      "category": "Laptop",
+      "price": "12,990",
+      "description": "4GB/128GBEMMC Storage/Chrome OS"
+    },
+    {
+      "id": "9738",
+      "image": "https://finedose.com/wp-content/uploads/2022/07/macbook-air-midnight-e1658224008584.jpg",
+      "name": "Apple MacBook Air Apple M3",
+      "brand": "Apple",
+      "category": "Laptop",
+      "price": "95,990",
+      "description": "8GB/256 GB SSD/macOS Sonoma"
+    }
+  ]
+}
