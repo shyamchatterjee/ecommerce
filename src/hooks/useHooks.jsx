@@ -6,7 +6,8 @@ let useHooks = ()=>{
       let [array,setArray] = useState([])
       
       let [updateobj,setupdateObj] = useState({})
-     
+     let [bttonText,setbttonText] = useState("Add to cart")
+     let [bgColor,setbgColor] = useState("orange")
      let getApi = (limit)=>{
           api.get("/product?_limit="+limit).then((value)=>{
                  setArray(value.data)
@@ -41,8 +42,18 @@ let useHooks = ()=>{
                
         })
      }
+     let cartbuttonText = ()=>{
+         
+            setbttonText("Added to cart")
+            setbgColor("green")
+            setTimeout(() => {
+                setbttonText("Add to cart")
+                setbgColor("orange")
+            },2000);
+        
+     }
    
 
-      return ({obj,setObj,createProduct,getApi,array,setArray,removeButton,editButton,editButton,updateobj,setupdateObj})
+      return ({obj,setObj,createProduct,getApi,array,setArray,removeButton,editButton,editButton,updateobj,setupdateObj,cartbuttonText,bttonText,bgColor})
 }
 export default useHooks

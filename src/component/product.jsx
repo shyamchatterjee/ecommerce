@@ -5,15 +5,16 @@ import { CiShoppingCart } from "react-icons/ci";
 import { Context } from "../Context/context";
 
 let Product = () => {
-  let { getApi, array, removeButton } = useHooks();
-  let counter = useContext(Context)
+  let { getApi, array, removeButton ,cartbuttonText,bttonText,bgColor } = useHooks();
+  let counter = useContext(Context);
 
   let [limits, setlimit] = useSearchParams();
   let limit = limits.get("limit");
   useEffect(() => {
     getApi(limit);
   }, []);
-  
+ 
+
   return (
     <>
       <div className="nav">
@@ -23,9 +24,13 @@ let Product = () => {
         <Link to="/cartcomponent">
           <div className="cart-img-contener">
             <CiShoppingCart className="cart-img" />
-          
-            <p style={{color:"green"}} className={counter.cart.length==0?"hide":"text-length"}>{counter.cart.length}</p>
-            
+
+            <p
+              style={{ color: "green" }}
+              className={counter.cart.length == 0 ? "hide" : "text-length"}
+            >
+              {counter.cart.length}
+            </p>
           </div>
         </Link>
       </div>
@@ -54,8 +59,12 @@ let Product = () => {
                 <h3>{element.brand}</h3>
                 <h3>{element.category}</h3>
                 <div className="button-contener">
-                  <button className="add-cart" onClick={() => counter.addCart(element)}>
-                    Add to Cart
+                  <button
+                    className="add-cart"
+                    style={{backgroundColor:bgColor}}
+                    onClick={() =>{ counter.addCart(element),cartbuttonText()}}
+                  >
+                    {bttonText}
                   </button>
                   <button
                     className="remove-button"
