@@ -3,9 +3,10 @@ import useHooks from "../hooks/useHooks";
 import { Link, useSearchParams } from "react-router";
 import { CiShoppingCart } from "react-icons/ci";
 import { Context } from "../Context/context";
+import Cartbutton from "./productbutton";
 
 let Product = () => {
-  let { getApi, array, removeButton ,cartbuttonText,bttonText,bgColor } = useHooks();
+  let { getApi, array, removeButton  } = useHooks();
   let counter = useContext(Context);
 
   let [limits, setlimit] = useSearchParams();
@@ -59,13 +60,7 @@ let Product = () => {
                 <h3>{element.brand}</h3>
                 <h3>{element.category}</h3>
                 <div className="button-contener">
-                  <button
-                    className="add-cart"
-                    style={{backgroundColor:bgColor}}
-                    onClick={() =>{ counter.addCart(element),cartbuttonText()}}
-                  >
-                    {bttonText}
-                  </button>
+                  <Cartbutton element={element}/>
                   <button
                     className="remove-button"
                     onClick={() => removeButton(element.id)}
