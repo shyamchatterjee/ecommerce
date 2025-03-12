@@ -19,7 +19,7 @@ let Home = () => {
       <div className="upper-contener">
       
         <div className="contener">
-          <h2 style={{ textAlign: "center" }}>Create Product</h2>
+          <h2 style={{ textAlign: "center"  }}>Create Product</h2>
           <form
             className="form"
             onSubmit={(e) => {

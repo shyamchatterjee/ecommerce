@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family:"Poppins", sans-serif; 
+  box-sizing: border-box;
 }
 body {
   /* display: flex; */
@@ -8,8 +10,10 @@ body {
   /* justify-content: center; */
   /* align-items: center; */
   /* gap: 1rem; */
-  padding: 1rem;
+  /* padding: 1rem; */
 }
+
+
 
 body::-webkit-scrollbar {
   display: none;
@@ -21,6 +25,8 @@ body::-webkit-scrollbar {
   border: 1px solid black;
   padding: 1rem;
   overflow-y: scroll;
+  background-color: #FFFF;
+  border: none;
 }
 .contener::-webkit-scrollbar {
   display: none;
@@ -30,6 +36,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+ 
 }
 #text-input {
   width: 100%;
@@ -120,22 +127,27 @@ body::-webkit-scrollbar {
   margin-top: 1rem;
   width: 100%;
   display: flex;
-  gap: 1rem;
-  justify-content: center;
-
-  align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  gap: 5px;
+  
 }
 .product {
   display: flex;
   gap: 1rem;
   align-items: center;
+  
+  
 }
 
 .product-details {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background-color: black;
+  color: white;
+  padding: 5px;
+
 }
 .add-cart {
   width: 110px;
@@ -172,6 +184,9 @@ body::-webkit-scrollbar {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1rem;
 }
 .cart-img {
   color: orange;
@@ -180,6 +195,8 @@ body::-webkit-scrollbar {
 
 a {
   text-decoration: none;
+  color: black;
+  font-weight: bolder;
 }
 .text-length {
   font-size: 12px;

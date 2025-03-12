@@ -6,7 +6,7 @@ import { Context } from "../Context/context";
 import Cartbutton from "./productbutton";
 
 let Product = () => {
-  let { getApi, array, removeButton  } = useHooks();
+  let { getApi, array, removeButton } = useHooks();
   let counter = useContext(Context);
 
   let [limits, setlimit] = useSearchParams();
@@ -14,13 +14,12 @@ let Product = () => {
   useEffect(() => {
     getApi(limit);
   }, []);
- 
 
   return (
     <>
       <div className="nav">
         <Link to="/">
-          <button className="home-button">Home</button>
+          <p style={{color:"white"}}>Home</p>
         </Link>
         <Link to="/cartcomponent">
           <div className="cart-img-contener">
@@ -44,8 +43,8 @@ let Product = () => {
                 <img
                   style={{ mixBlendMode: "color-burn" }}
                   src={element.image}
-                  width={200}
-                  height={200}
+                  width={150}
+                  height={150}
                   alt=""
                 />
               </div>
@@ -60,7 +59,7 @@ let Product = () => {
                 <h3>{element.brand}</h3>
                 <h3>{element.category}</h3>
                 <div className="button-contener">
-                  <Cartbutton element={element}/>
+                  <Cartbutton element={element} />
                   <button
                     className="remove-button"
                     onClick={() => removeButton(element.id)}
