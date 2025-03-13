@@ -4,6 +4,7 @@ import { Link, useSearchParams } from "react-router";
 import { CiShoppingCart } from "react-icons/ci";
 import { Context } from "../Context/context";
 import Cartbutton from "./productbutton";
+import Search from "./Searchcomponent ";
 
 let Product = () => {
   let { getApi, array, removeButton } = useHooks();
@@ -21,12 +22,13 @@ let Product = () => {
         <Link to="/">
           <p style={{color:"white"}}>Home</p>
         </Link>
+         <Search/>
         <Link to="/cartcomponent">
           <div className="cart-img-contener">
             <CiShoppingCart className="cart-img" />
 
             <p
-              style={{ color: "green" }}
+              style={{ color: "red" }}
               className={counter.cart.length == 0 ? "hide" : "text-length"}
             >
               {counter.cart.length}
@@ -55,6 +57,7 @@ let Product = () => {
                     ({element.description})
                   </p>
                 </h3>
+                   <h2 style={{color:"orange"}}>{element.rate}</h2>
                 <h3 style={{ color: "red" }}>{"Rs. " + element.price}</h3>
                 <h3>{element.brand}</h3>
                 <h3>{element.category}</h3>

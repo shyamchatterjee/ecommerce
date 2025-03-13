@@ -7,7 +7,8 @@
       "brand": "Motorola",
       "category": "Phone",
       "price": "17,998",
-      "description": "Cobalt Blue,128 GB,8GB RAM"
+      "description": "Cobalt Blue,128 GB,8GB RAM",
+      "rate": "****"
     },
     {
       "id": "1e60",
@@ -16,7 +17,8 @@
       "name": "POCO C75 5G",
       "brand": "Poco",
       "category": "Phone",
-      "price": "7,999"
+      "price": "7,999",
+      "rate": "*****"
     },
     {
       "id": "33f8",
@@ -25,7 +27,8 @@
       "brand": "OPPO",
       "category": "Phone",
       "price": "12,999",
-      "description": "45W SUPERVOOC Charger in-The-Box ,128GB"
+      "description": "45W SUPERVOOC Charger in-The-Box ,128GB",
+      "rate": "***"
     },
     {
       "id": "3659",
@@ -34,7 +37,8 @@
       "brand": "HP",
       "category": "Laptop",
       "price": "31,490",
-      "description": "8GB/256GB SSD/Windows 11 Home (15.6inch,Natural Silver,1.69Kg,With MS office"
+      "description": "8GB/256GB SSD/Windows 11 Home (15.6inch,Natural Silver,1.69Kg,With MS office",
+      "rate": "*****"
     },
     {
       "id": "f1f6",
@@ -43,7 +47,8 @@
       "brand": "Infinix",
       "category": "Laptop",
       "price": "51,990",
-      "description": "16GB/512GB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 3050/80W"
+      "description": "16GB/512GB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 3050/80W",
+      "rate": "***"
     },
     {
       "id": "c677",
@@ -52,7 +57,8 @@
       "brand": "Lenevo",
       "category": "Laptop",
       "price": "12,990",
-      "description": "4GB/128GBEMMC Storage/Chrome OS"
+      "description": "4GB/128GBEMMC Storage/Chrome OS",
+      "rate": "*****"
     },
     {
       "id": "9738",
@@ -61,7 +67,8 @@
       "brand": "Apple",
       "category": "Laptop",
       "price": "95,990",
-      "description": "8GB/256 GB SSD/macOS Sonoma"
+      "description": "8GB/256 GB SSD/macOS Sonoma",
+      "rate": "*****"
     }
   ]
 }

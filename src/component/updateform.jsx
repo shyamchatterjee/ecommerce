@@ -110,6 +110,18 @@ let UpdateForm = ()=> {
         
         />
       </div>
+      <div className="input-contener">
+        <p>Rating</p>
+        <input
+          type="text"
+          name=""
+          id="image-input"
+          placeholder=" Product-rating"
+          value={updateobj.rate}
+          onChange={(e)=>{setupdateObj({...updateobj,rate:e.target.value})}}
+        
+        />
+      </div>
       <div className="button-contener">
         <input className="submit-button" type="submit"  value="Update" />
        

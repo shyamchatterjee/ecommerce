@@ -112,6 +112,19 @@ let Home = () => {
                 }}
               />
             </div>
+            <div className="input-contener">
+              <p>Rating</p>
+              <input
+                type="text"
+                name=""
+                id="image-input"
+                placeholder="Product-rating"
+                value={obj.rate}
+                onChange={(e) => {
+                  setObj({ ...obj, rate: e.target.value });
+                }}
+              />
+            </div>
             <div className="button-contener">
               <input className="submit-button" type="submit"  value="Post" />
               

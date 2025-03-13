@@ -1,10 +1,12 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { api } from "../contast/contast"
+import { Context } from "../Context/context"
+import { useNavigate } from "react-router"
 
 let useHooks = ()=>{
       let [obj,setObj] = useState({})
-      let [array,setArray] = useState([])
-      
+      let {array,setArray} = useContext(Context)
+      let navigate = useNavigate("")
       let [updateobj,setupdateObj] = useState({})
      let [bttonText,setbttonText] = useState("Add to cart")
      let [bgColor,setbgColor] = useState("orange")
@@ -40,6 +42,8 @@ let useHooks = ()=>{
                   updateobj.price = ""
                  updateobj.description =""
                   updateobj.image = ""
+                  updateobj.rate = ""
+                  navigate("/product")
                
         })
      }
