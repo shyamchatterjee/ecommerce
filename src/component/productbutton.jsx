@@ -9,7 +9,7 @@ let Cartbutton = ({element})=>{
     className="add-cart"
     style={{backgroundColor:bgColor}}
     disabled={disaBled}
-    onClick={() =>{ counter.addCart(element),cartbuttonText()}}
+    onClick={(e) =>{ e.preventDefault() ,counter.addCart(element),cartbuttonText()}}
   > {bttonText}</button>
 }
 export default Cartbutton

@@ -19,7 +19,7 @@ let Product = () => {
   return (
     <>
       <div className="nav">
-        <Link to="/">
+        <Link  to="/">
           <p style={{color:"white"}}>Home</p>
         </Link>
          <Search/>
@@ -40,7 +40,7 @@ let Product = () => {
       <div className="product-contener">
         {array.map((element) => {
           return (
-            <div className="product">
+          <Link to={"/singleproduct/"+element.id}> <div className="product">
               <div className="image-contener">
                 <img
                   style={{ mixBlendMode: "color-burn" }}
@@ -65,16 +65,16 @@ let Product = () => {
                   <Cartbutton element={element} />
                   <button
                     className="remove-button"
-                    onClick={() => removeButton(element.id)}
+                    onClick={(e) =>{e.preventDefault(), removeButton(element.id)}}
                   >
                     Remove
                   </button>
                   <Link to={"/updateform/" + element.id}>
-                    <button className="edit-button">Edit</button>
+                    <button className="edit-button" >Edit</button>
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> </Link>
           );
         })}
       </div>
