@@ -263,3 +263,14 @@ a {
   justify-content: center;
   align-items: center;
 }
+.img-slider{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  gap: 1rem;
+}
+.border{
+  border: 1px solid blue;
+  padding: 1rem;
+}
