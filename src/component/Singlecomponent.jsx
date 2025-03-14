@@ -4,6 +4,7 @@ import { api } from "../contast/contast";
 import { Context } from "../Context/context";
 import { CiShoppingCart } from "react-icons/ci";
 import Cartbutton from "./productbutton";
+import Search from "./Searchcomponent ";
 
 let SingleProduct = ()=>{
        let perams = useParams()
@@ -23,7 +24,7 @@ let SingleProduct = ()=>{
         <Link  to="/">
           <p style={{color:"white"}}>Home</p>
         </Link>
-        
+          <Search/>
         <Link to="/cartcomponent">
           <div className="cart-img-contener">
             <CiShoppingCart className="cart-img" />

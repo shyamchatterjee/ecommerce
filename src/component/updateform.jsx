@@ -20,7 +20,7 @@ let UpdateForm = ()=> {
 <div className="upper-contener">
 
   <div className="contener">
-    <h2 style={{ textAlign: "center" }}>Update product</h2>
+    <h2 style={{ textAlign: "center" ,color:"green" }}>Update product</h2>
     <form
       className="form"
       onSubmit={(e) => {

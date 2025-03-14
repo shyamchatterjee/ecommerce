@@ -274,3 +274,9 @@ a {
   border: 1px solid blue;
   padding: 1rem;
 }
+.nav-route{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+   align-items: center;
+}

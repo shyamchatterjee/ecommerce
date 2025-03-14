@@ -2,10 +2,12 @@ import { useContext, useEffect } from "react"
 import { Context } from "../Context/context"
 import { api } from "../contast/contast"
 import useHooks from "../hooks/useHooks"
+import { useNavigate } from "react-router"
 
 let Search = ()=>{
       let {searchvalue,setSearchvalue,array,setArray} = useContext(Context)
       let {getApi} = useHooks()
+      let navigate = useNavigate()
        useEffect(()=>{
             if (searchvalue=="") {
                 getApi()
@@ -19,6 +21,7 @@ let Search = ()=>{
                           }
                   })
                   setArray(filtervalue)
+                  navigate("/product")
                 }
                 filterfuntion()
             }

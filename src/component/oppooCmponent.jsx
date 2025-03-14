@@ -1,24 +1,23 @@
-import { useContext, useEffect } from "react";
-import useHooks from "../hooks/useHooks";
-import { Link, useSearchParams } from "react-router";
+import { useContext, useEffect, useState } from "react"
+import { Context } from "../Context/context"
 import { CiShoppingCart } from "react-icons/ci";
-import { Context } from "../Context/context";
-import Cartbutton from "./productbutton";
+import { Link } from "react-router";
 import Search from "./Searchcomponent ";
+import { api } from "../contast/contast";
+import useHooks from "../hooks/useHooks";
+import Cartbutton from "./productbutton";
+let Oppo = ()=>{
+      let counter = useContext(Context)
+      let {removeButton} = useHooks()
+      let [array,setArray] = useState([])
 
-let Product = () => {
-  let { getApi, array, removeButton } = useHooks();
-  let counter = useContext(Context);
-
-  let [limits, setlimit] = useSearchParams();
-  let limit = limits.get("limit");
-  useEffect(() => {
-    getApi(limit);
-  }, []);
-
-  return (
-    <>
-      <div className="nav">
+        useEffect(()=>{
+              api.get("/product?brand="+ "OPPO").then((value)=>{
+                     setArray(value.data)
+              })
+        })
+   return <>
+          <div className="nav">
         <Link  to="/">
           <p style={{color:"white"}}>Home</p>
         </Link>
@@ -45,8 +44,9 @@ let Product = () => {
                <Link to="/infinix"  >Infinix</Link>
                <Link to="/apple"  >Apple</Link>
         </div>
-      <div className="product-contener">
-        {array.map((element) => {
+           <div className="Product-contener" style={{marginTop:"2rem"}}>
+            {array.length==0? <h2>Out of stock</h2>:
+           array.map((element) => {
           return (
           <Link to={"/singleproduct/"+element.id}> <div className="product">
               <div className="image-contener">
@@ -70,7 +70,7 @@ let Product = () => {
                 <h3>{element.brand}</h3>
                 <h3>{element.category}</h3>
                 <div className="button-contener">
-                  <Cartbutton element={element} />
+                  <Cartbutton element={element}/>
                   <button
                     className="remove-button"
                     onClick={(e) =>{e.preventDefault(), removeButton(element.id)}}
@@ -85,8 +85,8 @@ let Product = () => {
             </div> </Link>
           );
         })}
-      </div>
-    </>
-  );
-};
-export default Product;
+    
+           </div>
+   </>
+}
+export default Oppo
