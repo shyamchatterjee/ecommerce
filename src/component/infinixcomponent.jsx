@@ -37,16 +37,16 @@ let Infinix = ()=>{
          </Link>
        </div>
          <div className="nav-route">
-           <Link to="/product">All product</Link>
-                <Link to="/oppo">Oppo</Link>
-                <Link to="/vivo" >Vivo</Link>
-                <Link to="/moto"  >Moto</Link>
-                <Link  to="/poco" >Poco</Link>
-                <Link to="/infinix"  >Infinix</Link>
-                <Link to="/apple"  >Apple</Link>
+         <Link to="/product">All product</Link>
+               <Link to="/oppo"><img src="https://static.vecteezy.com/system/resources/previews/020/190/680/original/oppo-logo-oppo-icon-free-free-vector.jpg" height={50} width={50}    alt="" /></Link>
+               <Link to="/vivo" ><img src="https://www.phoneworld.com.pk/wp-content/uploads/2019/02/vivo-logo.jpg"  height={50} width={50}  alt="" /></Link>
+               <Link to="/moto"  ><img src="https://th.bing.com/th/id/OIP.YqehjuiIXVEzk6lxu0UqggHaGz?w=815&h=749&rs=1&pid=ImgDetMain"  height={50} width={50} alt="" /></Link>
+               <Link  to="/poco" ><img src="https://i1.wp.com/tech-ish.com/wp-content/uploads/2020/01/Xiaomi-Poco-Company-Logo.jpg?fit=1200%2C675&ssl=1" height={50} width={50} alt="" /></Link>
+               <Link to="/infinix"  ><img src="https://static.vecteezy.com/system/resources/previews/020/927/278/non_2x/infinix-brand-logo-phone-symbol-name-white-design-china-mobile-illustration-with-black-background-free-vector.jpg" height={50} width={50} alt="" /></Link>
+               <Link to="/apple"  ><img src="https://th.bing.com/th/id/R.8ef8e7517ce4e8ba5c30c0e649892441?rik=cHzqZU5R2edg0w&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fapple-logo-png-transparent-background%2fapple-logo-png-transparent-background-11.png&ehk=7o7msvPDIVBW90bxSOkAV9YPjCnj3ew3BLmZKptd%2bYQ%3d&risl=&pid=ImgRaw&r=0" height={50} width={50} alt="" /></Link>
          </div>
-         <div className="product-contener">
-         <div className="Product-contener" style={{marginTop:"2rem"}}>
+      
+         <div className="Product-container" style={{marginTop:"2rem"}}>
              {array.length==0?<h2>Out of stock</h2>:
            array.map((element) => {
           return (
@@ -88,7 +88,7 @@ let Infinix = ()=>{
           );
         })}
            </div>
-         </div>
+         
     </>
 }
 export default Infinix

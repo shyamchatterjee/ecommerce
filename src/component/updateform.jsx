@@ -99,7 +99,7 @@ let UpdateForm = ()=> {
         ></textarea>
       </div>
       <div className="input-contener">
-        <p>image</p>
+        <p>Frist image</p>
         <input
           type="text"
           name=""
@@ -107,6 +107,42 @@ let UpdateForm = ()=> {
           placeholder="Image-url"
           value={updateobj.image}
           onChange={(e)=>{setupdateObj({...updateobj,image:e.target.value})}}
+        
+        />
+      </div>
+      <div className="input-contener">
+        <p>Second image</p>
+        <input
+          type="text"
+          name=""
+          id="image-input"
+          placeholder="Image-url"
+          value={updateobj.img1}
+          onChange={(e)=>{setupdateObj({...updateobj,img1:e.target.value})}}
+        
+        />
+      </div>
+      <div className="input-contener">
+        <p>Third image</p>
+        <input
+          type="text"
+          name=""
+          id="image-input"
+          placeholder="Image-url"
+          value={updateobj.img2}
+          onChange={(e)=>{setupdateObj({...updateobj,img2:e.target.value})}}
+        
+        />
+      </div>
+      <div className="input-contener">
+        <p>Fourth image</p>
+        <input
+          type="text"
+          name=""
+          id="image-input"
+          placeholder="Image-url"
+          value={updateobj.img3}
+          onChange={(e)=>{setupdateObj({...updateobj,img3:e.target.value})}}
         
         />
       </div>

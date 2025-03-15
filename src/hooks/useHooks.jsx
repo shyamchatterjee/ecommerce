@@ -23,7 +23,12 @@ let useHooks = ()=>{
                obj.price = ""
                obj.brand = ""
                obj.category = ""
+               obj.description = ""
                obj.image = ""
+               obj.img1 = ""
+               obj.img2 = ""
+               obj.img3 = ""
+               obj.rating = ""
           })
       }
      let removeButton = (id)=>{
@@ -42,6 +47,9 @@ let useHooks = ()=>{
                   updateobj.price = ""
                  updateobj.description =""
                   updateobj.image = ""
+                  updateobj.img1 = ""
+                  updateobj.img2 = ""
+                  updateobj.img3 = ""
                   updateobj.rate = ""
                   navigate("/product")
                

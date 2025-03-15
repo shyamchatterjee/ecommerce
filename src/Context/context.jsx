@@ -49,7 +49,15 @@ export let ContextFuntion = ({children})=>{
                }
             }
     }
-
+    let  removeFuntion = (id)=>{
+        let removeItem = cart.filter((element)=>{
+                if (element.id!==id) {
+                  return element
+                }
+        })
+        setCart(removeItem)
+    }
+     
     
     let clickFuntion = (data)=>{
           
@@ -59,7 +67,7 @@ export let ContextFuntion = ({children})=>{
        
     
     }
-    return  <Context.Provider value={{addCart,cart,searchvalue,setSearchvalue,array,setArray,clickFuntion,boolen,style,imag}}>
+    return  <Context.Provider value={{addCart,cart,searchvalue,setSearchvalue,array,setArray,clickFuntion,boolen,style,imag,removeFuntion}}>
         {children}
       </Context.Provider>
 }

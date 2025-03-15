@@ -100,7 +100,7 @@ let Home = () => {
               ></textarea>
             </div>
             <div className="input-contener">
-              <p>image</p>
+              <p>Frist image</p>
               <input
                 type="text"
                 name=""
@@ -109,6 +109,45 @@ let Home = () => {
                 value={obj.image}
                 onChange={(e) => {
                   setObj({ ...obj, image: e.target.value });
+                }}
+              />
+            </div>
+            <div className="input-contener">
+              <p>Second image</p>
+              <input
+                type="text"
+                name=""
+                id="image-input"
+                placeholder="Image-url"
+                value={obj.img1}
+                onChange={(e) => {
+                  setObj({ ...obj, img1: e.target.value });
+                }}
+              />
+            </div>
+            <div className="input-contener">
+              <p>Third image</p>
+              <input
+                type="text"
+                name=""
+                id="image-input"
+                placeholder="Image-url"
+                value={obj.img2}
+                onChange={(e) => {
+                  setObj({ ...obj, img2: e.target.value });
+                }}
+              />
+            </div>
+            <div className="input-contener">
+              <p>Fourth image</p>
+              <input
+                type="text"
+                name=""
+                id="image-input"
+                placeholder="Image-url"
+                value={obj.img1}
+                onChange={(e) => {
+                  setObj({ ...obj, img3: e.target.value });
                 }}
               />
             </div>

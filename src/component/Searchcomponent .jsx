@@ -11,19 +11,22 @@ let Search = ()=>{
        useEffect(()=>{
             if (searchvalue=="") {
                 getApi()
-            }else{
-                let filterfuntion = ()=>{
+            }
+          
+            
+            else{
+                 let filterFuntion = ()=>{
+                      let item = array.filter((element)=>{
+                             if (element.name.toLowerCase().includes(searchvalue.toLowerCase())) {
+                                   return element
+                             }
+                      })
+                      setArray(item)
+                      navigate("/product")
 
+                 }
+                 filterFuntion()
                 
-                  let filtervalue = array.filter((element)=>{
-                          if (element.name.toLowerCase().includes(searchvalue.toLowerCase())||element.category.toLowerCase().includes(searchvalue.toLowerCase())) {
-                                return element
-                          }
-                  })
-                  setArray(filtervalue)
-                  navigate("/product")
-                }
-                filterfuntion()
             }
        },[searchvalue])
     return <input type="text" name="" id="search-input" placeholder="Search-product-name" onChange={(e)=>{setSearchvalue(e.target.value)}} />
